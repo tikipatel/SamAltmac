@@ -19,7 +19,7 @@ final class Notifier: NSObject, UNUserNotificationCenterDelegate {
     func post(title: String, body: String) {
         guard isBundled else {
             NSSound.beep()
-            print("[MemoryDropAlert] \(title) — \(body)")
+            print("[SamAltmac] \(title) — \(body)")
             return
         }
         let content = UNMutableNotificationContent()

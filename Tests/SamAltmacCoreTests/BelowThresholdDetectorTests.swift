@@ -1,5 +1,5 @@
 import XCTest
-@testable import MemoryDropAlertCore
+@testable import SamAltmacCore
 
 final class BelowThresholdDetectorTests: XCTestCase {
     let t0 = Date(timeIntervalSince1970: 0)

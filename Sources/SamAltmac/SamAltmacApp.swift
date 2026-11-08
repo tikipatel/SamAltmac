@@ -1,8 +1,8 @@
 import SwiftUI
-import MemoryDropAlertCore
+import SamAltmacCore
 
 @main
-struct MemoryDropAlertApp: App {
+struct SamAltmacApp: App {
     @StateObject private var monitor = MemoryMonitor()
 
     var body: some Scene {
@@ -20,7 +20,7 @@ struct MenuContentView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("Memory Drop Alert").font(.headline)
+            Text("SamAltmac").font(.headline)
 
             if let sample = monitor.sample {
                 ProgressView(value: min(sample.percent, 100), total: 100)

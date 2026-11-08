@@ -2,14 +2,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "MemoryDropAlert",
+    name: "SamAltmac",
     platforms: [.macOS(.v13)],
     products: [
-        .executable(name: "MemoryDropAlert", targets: ["MemoryDropAlert"]),
+        .executable(name: "SamAltmac", targets: ["SamAltmac"]),
     ],
     targets: [
-        .target(name: "MemoryDropAlertCore"),
-        .executableTarget(name: "MemoryDropAlert", dependencies: ["MemoryDropAlertCore"]),
-        .testTarget(name: "MemoryDropAlertCoreTests", dependencies: ["MemoryDropAlertCore"]),
+        .target(name: "SamAltmacCore"),
+        .executableTarget(name: "SamAltmac", dependencies: ["SamAltmacCore"]),
+        .testTarget(name: "SamAltmacCoreTests", dependencies: ["SamAltmacCore"]),
     ]
 )

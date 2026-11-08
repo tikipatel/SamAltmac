@@ -2,10 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>CFBundleName</key><string>MemoryDropAlert</string>
-    <key>CFBundleDisplayName</key><string>Memory Drop Alert</string>
-    <key>CFBundleIdentifier</key><string>com.tikipatel.MemoryDropAlert</string>
-    <key>CFBundleExecutable</key><string>MemoryDropAlert</string>
+    <key>CFBundleName</key><string>SamAltmac</string>
+    <key>CFBundleDisplayName</key><string>SamAltmac</string>
+    <key>CFBundleIdentifier</key><string>com.tikipatel.SamAltmac</string>
+    <key>CFBundleExecutable</key><string>SamAltmac</string>
     <key>CFBundlePackageType</key><string>APPL</string>
     <key>CFBundleShortVersionString</key><string>1.0.0</string>
     <key>CFBundleVersion</key><string>1</string>

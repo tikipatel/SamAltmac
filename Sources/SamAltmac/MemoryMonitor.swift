@@ -1,5 +1,5 @@
 import Foundation
-import MemoryDropAlertCore
+import SamAltmacCore
 
 @MainActor
 final class MemoryMonitor: ObservableObject {
@@ -48,7 +48,7 @@ final class MemoryMonitor: ObservableObject {
     }
 
     func sendTestAlert() {
-        notifier.post(title: "Memory Drop Alert",
+        notifier.post(title: "SamAltmac",
                       body: "Test notification. You'll be alerted when memory usage drops below \(Int(threshold))%.")
     }
 

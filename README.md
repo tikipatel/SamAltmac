@@ -1,4 +1,4 @@
-# Memory Drop Alert
+# SamAltmac
 
 A tiny macOS menu bar app that monitors memory usage and alerts you when usage **drops below** a threshold (80% by default).
 
@@ -23,12 +23,12 @@ It does not alert when memory goes *above* the threshold. The alert fires when u
 
 ```bash
 ./scripts/build-app.sh
-open build/MemoryDropAlert.app
+open build/SamAltmac.app
 ```
 
 The first time it runs, macOS asks for permission to show notifications. Allow it, then click **Test Alert** in the menu to confirm.
 
-To install it, drag `build/MemoryDropAlert.app` into `/Applications`. To launch it at login, add it under System Settings > General > Login Items.
+To install it, drag `build/SamAltmac.app` into `/Applications`. To launch it at login, add it under System Settings > General > Login Items.
 
 You can also run it with `swift run` during development. Outside an `.app` bundle, macOS notifications aren't available, so the app beeps and logs to the console instead.
 
