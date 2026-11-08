@@ -1,0 +1,22 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test
+        run: swift test
+      - name: Build app bundle
+        run: ./scripts/build-app.sh
+      - name: Zip app
+        run: cd build && ditto -c -k --keepParent MemoryDropAlert.app MemoryDropAlert.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MemoryDropAlert
+          path: build/MemoryDropAlert.zip
